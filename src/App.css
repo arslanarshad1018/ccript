@@ -57,8 +57,8 @@
   width: 380px;
   height: 48px;
   border-radius: 12px;
-  border: #0aa36e;
-  opacity: 0px;
+  border:2px solid #0aa36e;
+  opacity: 1;
   background-color: #0aa36e;
 }
 
@@ -105,7 +105,7 @@
   /* Adjust as needed */
   height: 100px;
   gap: 0px;
-  opacity: 0px;
+  opacity: 1;
   /* Customize background color */
   color: #0aa36e;
   /* Customize text color */
