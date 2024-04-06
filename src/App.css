@@ -59,7 +59,6 @@
   border-radius: 12px;
   border: #0aa36e;
   opacity: 0px;
-  color: white;
   background-color: #0aa36e;
 }
 
@@ -107,7 +106,6 @@
   height: 100px;
   gap: 0px;
   opacity: 0px;
-  background-color: white;
   /* Customize background color */
   color: #0aa36e;
   /* Customize text color */

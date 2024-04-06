@@ -19,19 +19,25 @@ const LoginPage = () => {
     const handleSignIn = async () => {
 
 
+        if (username !== '' && password !== '') {
+            const response = await axios.post('https://hiring-test-task.vercel.app/api/login', {
+                username,
+                password
+            });
 
-        const response = await axios.post('https://hiring-test-task.vercel.app/api/login', {
-            username,
-            password
-        });
-
-        if (response.data.token) {
-            localStorage.setItem('token', response.data.token);
-            // Redirect to the appointments page upon successful login
-            history('/appointments');
-        } else {
+            if (response.data.token) {
+                localStorage.setItem('token', response.data.token);
+                // Redirect to the appointments page upon successful login
+                history('/appointments');
+            } else {
+                setErrorMessage('Username or password is incorrect.');
+            }
+        }
+        else {
             setErrorMessage('Username or password is incorrect.');
         }
+
+
 
     };
 
